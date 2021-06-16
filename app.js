@@ -12,7 +12,7 @@ console.log('the server is running :)')
 app.get('/',(req,res)=>{
     console.log('done !')
     console.log(process.env)
-    res.json({name:'success'})
+    res.json({name:'success',change:true})
 })
 
 app.listen(port)
